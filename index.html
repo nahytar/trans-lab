@@ -15,55 +15,57 @@
 
 <body>
   <!--=====================================Login==================================================-->
-  <section class="logo">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <img class="imgLogo" src="docs/imagen.png" alt="logo">
-          <h1>TRANS-LAB</h1>
-        </div>
-        <div class="col-sm-3"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="loginUser">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <div class="bs-example">
-            <form action="#" id="loginForm">
-              <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico" required>
-                <input type="password" class="form-control" id="inputPass" placeholder="Contraseña" required>
-                <button type="submit" class="btn btn-login">INICIAR SESION</button>
-              </div>
-            </form>
+  <section id="login">
+    <section class="logo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            <img class="imgLogo" src="docs/imagen.png" alt="logo">
+            <h1>TRANS-LAB</h1>
           </div>
+          <div class="col-sm-3"></div>
         </div>
-        <div class="col-sm-3"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container-fluid">
-      <label>
-        <a href="http://" id="OlvidasteContraseña">¿Olvidaste tu contraseña?</a>
-      </label>
-    </div>
-  </section>
+    <section class="loginUser">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            <div class="bs-example">
+              <form action="#" id="loginForm">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico" required>
+                  <input type="password" class="form-control" id="inputPass" placeholder="Contraseña" required>
+                  <button type="submit" class="btn btn-login">INICIAR SESION</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <div class="container-fluid">
-      <label>
-        <span>¿NO TIENES CUENTA?
-          <a href="http://" id="OlvidasteContraseña">REGISTRATE</a>
-        </span>
-      </label>
-    </div>
+    <section>
+      <div class="container-fluid">
+        <label>
+          <a href="http://" id="OlvidasteContraseña">¿Olvidaste tu contraseña?</a>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <label>
+          <span>¿NO TIENES CUENTA?
+            <a href="http://" id="OlvidasteContraseña">REGISTRATE</a>
+          </span>
+        </label>
+      </div>
+    </section>
   </section>
   <!-- ======================================navbar=============================================== -->
   <section id="navbar">
@@ -76,21 +78,24 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Ver saldo
-              <span class="sr-only btnSaldo">(current)</span>
+            <a class="nav-link btnAreaSaldo" href="#">Ver saldo
+              <span class="sr-only ">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btnCalcular" href="#">Calcular tarifa</a>
+            <a class="nav-link btnAreaCalcular" href="#">Calcular tarifa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled btnPerfil" href="#">Perfil</a>
+            <a class="nav-link disabled btnAreaPerfil" href="#">Perfil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled btnPreguntas" href="#">Preguntas frecuentes</a>
+            <a class="nav-link disabled btnAreaQuestions" href="#">Preguntas frecuentes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled btnHome" href="#">Home</a>
+            <a class="nav-link disabled btnAreaHome" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled btnSingOut" href="#">Cerrar Sesion</a>
           </li>
         </ul>
       </div>
@@ -101,15 +106,15 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3"></div>
-        <div id="Areabtns" class="col-sm-6">
+        <div id="Areabtns" class="col-sm-6" mb-3>
           <div class="bs-example">
             <form action="#" id="loginForm">
               <div class="form-group">
-                <button type="button" class="btn btn-secondary btn-lg btn-block btnSaldo">VER SALDO</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block btnCalcular">CALCULAR TARIFA</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block btnPerfil">PERFIL</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block btnPreguntas">PREGUNTAS FRECUENTES</button>
-
+                <button type="button" class="btn btn-secondary btn-lg btn-block btnAreaSaldo">VER SALDO</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block btnAreaCalcular">CALCULAR TARIFA</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block btnAreaPerfil">PERFIL</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block btnAreaQuestions">PREGUNTAS FRECUENTES</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block btnSingOut">CERRAR SESION</button>
               </div>
             </form>
           </div>
@@ -126,7 +131,7 @@
         <div class="col-sm-6">
           <form>
             <div class="form-group">
-              <input type="text" id="cardNum" class="form-control" placeholder="Numero de tarjeta">
+              <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Numero de tarjeta">
             </div>
             <div class="form-group">
               <select class="form-control" id="exampleFormControlSelect1">
@@ -221,12 +226,15 @@
     </div>
   </section>
   <!--======================================Perfil===================================================-->
-  <section>
+  <section id="areaProfile">
 
-
+    <img src="docs/enConstruccion.jpg" alt="en construccion">
 
   </section>
-
+  <!--=========================================Preguntas============================================-->
+  <section id="areaQuestions">
+    <img src="docs/enConstruccion.jpg" alt="en construccion">
+  </section>
 
 
   <!-- <input type="text" placeholder="ingrese n° de tarjeta" id="cardNum">
@@ -248,8 +256,9 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
   <script src="./js/saldo.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
