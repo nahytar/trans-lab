@@ -12,8 +12,9 @@ body {
   text-align: center;
 }
 
-.loginUser {
+.areaHome {
   text-align: center;
+  background-color: grey;
 }
 
 .btn-login {
@@ -37,4 +38,19 @@ body {
 .imgLogo {
   width: 60%;
   height: auto;
+}
+.btn {
+  background-color: #F6A800;
+};
+
+#areaSaldo {
+  background-color: grey;
+}
+
+.orange {
+  background-color: #F6A800;
+}
+
+#photoProfile {
+  background-color: orange;
 }
